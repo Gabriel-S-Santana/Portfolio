@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
+import { ButtonComponent } from '../../components/button/button.component';
 
 @Component({
-  selector: 'app-navbar',
+  selector: 'gs-navbar',
   standalone: true,
-  imports: [],
+  imports: [ButtonComponent],
   templateUrl: './navbar.component.html',
   styleUrl: './navbar.component.css'
 })

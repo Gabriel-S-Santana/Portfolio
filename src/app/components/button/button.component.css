@@ -1,0 +1,26 @@
+button {
+    outline: none;
+    border: none;
+    display: flex;
+    padding: 12px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: var(--text-color);
+    border-radius: 4px;
+    transition: .5s ease;
+}
+
+
+.btn-gradient {
+    background: var(--gradient);
+}
+
+.btn-gradient:hover {
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.btn-default {
+    background: var(--btn-default);
+}

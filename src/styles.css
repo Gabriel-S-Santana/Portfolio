@@ -7,11 +7,13 @@
 }
 
 :root {
-  --main-cian: #00d2df;
-  --bg-black: #111111;
-  --bg-gray__btn: rgba(244, 251, 255, 0.1);
+    font-size: 62.5%;
+  --cian: #00d2df;
+  --text-color: white;
+  --black: #111111;
+  --btn-default: rgba(244, 251, 255, 0.1);
   --alt-cian: #022cc1;
-  --brdr-grad: linear-gradient(120deg, #10d7e2 100%, #022cc1 100%);
+  --gradient: linear-gradient(267deg, #022CC1 -2.5%, #1BC8D1 102.77%);
 }
 
 * {
@@ -69,7 +71,7 @@ h3 {
 
 .btn-text {
   color: #fff;
-  font-family: "Andale Mono";
+  font-family: Poppins;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
