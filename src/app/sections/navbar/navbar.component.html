@@ -1,6 +1,6 @@
-<section class="navbar">
+<section class="navbar" [ngClass]="isGone ? 'dropDown' : ''">
     <a href="#home" class="logo-text">Gabriel Santana</a>
-    <nav>
+    <nav [ngClass]="isMobile ? 'nav-responsive' : ''">
         <a href="#about" class="btn-text">Sobre</a>
         <a href="#experience" class="btn-text">Experiência</a>
         <a href="projects" class="btn-text">Projetos</a>
@@ -8,4 +8,8 @@
     <a href="../../../assets/docs/Gabriel-Santana-dev-jr.pdf" download="Gabriel-Santana-dev-jr">
         <gs-button [isGradient]="true" [iconButton]="'download-cloud'" textButton="Download" />
     </a>
+    <button class=" menu-btn">
+        <img *ngIf="!isGone" src="../../../assets/images/bars.svg" (click)="navToggle()">
+        <img *ngIf="isGone"src="../../../assets/images/x.svg" (click)="navToggle()">
+    </button>
 </section>
