@@ -10,12 +10,13 @@ import * as feather from 'feather-icons';
   styleUrl: './button.component.css'
 })
 
-
 export class ButtonComponent {
     @Input() isGradient: Boolean = false;
     @Input() iconButton!: String;
     @Input() textButton!: String;
+    feather!: any;
     ngAfterViewInit() {
         feather.replace();
     }
 }
+
