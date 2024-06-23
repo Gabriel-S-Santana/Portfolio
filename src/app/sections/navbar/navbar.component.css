@@ -127,7 +127,7 @@ nav a:hover:after {
 
     .nav-responsive {
         position: absolute;
-        z-index: 3;
+        z-index: 0;
         background-color: transparent;
         top: 8rem;
         left: 0;

@@ -23,11 +23,13 @@ export class NavbarComponent {
             this.isGone = false
             setTimeout(() => {
                 this.isMobile = false
-            }, 500);
+            }, 50);
         }
         else {
+            setTimeout(() => {
+                this.isMobile = true
+            }, 50);
             this.isGone = true
-            this.isMobile = true
         }
     }
 }
