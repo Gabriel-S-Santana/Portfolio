@@ -97,3 +97,23 @@
         display: flex;
     }
 }
+
+@media (max-width: 370px) {
+    .hero-section {
+        padding: 0px 24px;
+    }
+
+    .hero-text {
+        gap: 2.4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text p {
+        width: 100%;
+        font-size: 1.6rem;
+    }
+
+}
