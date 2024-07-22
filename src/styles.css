@@ -1,23 +1,27 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 @font-face {
-  font-family: "Andale Mono";
-  src: url("assets/fonts/ANDALEMO.TTF") format("truetype");
-  font-weight: normal;
-  font-style: normal;
+    font-family: "Andale Mono";
+    src: url("assets/fonts/ANDALEMO.TTF") format("truetype");
+    font-weight: normal;
+    font-style: normal;
 }
 
 :root {
     font-size: 62.5%;
-  --cian: #00d2df;
-  --text-color: white;
-  --black: #111111;
-  --btn-default: rgba(244, 251, 255, 0.1);
-  --alt-cian: #022cc1;
-  --gradient: linear-gradient(267deg, #022CC1 -2.5%, #1BC8D1 102.77%);
+    --cian: #00d2df;
+    --text-color: white;
+    --black: #111111;
+    --btn-default: rgba(244, 251, 255, 0.1);
+    --alt-cian: #022cc1;
+    --gradient: linear-gradient(267deg, #022cc1 -2.5%, #1bc8d1 102.77%);
 }
 
 * {
-  box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 *,
@@ -27,8 +31,31 @@ p,
 h1,
 h2,
 h3 {
-  margin: 0;
-  padding: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilizando a barra de rolagem para navegadores Webkit (Chrome, Safari) */
+::-webkit-scrollbar {
+    width: 12px;
+}
+
+::-webkit-scrollbar-track {
+    background: #111;
+    border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: #00d2df;
+    border-radius: 10px;
+    border: 3px solid #f1f1f1;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+/* Estilizando a barra de rolagem para Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: #00d2df #f1f1f1;
 }
 
 a {
@@ -36,49 +63,49 @@ a {
 }
 
 .hero-title {
-  color: #fff;
-  font-family: Poppins;
-  font-size: 56px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 115%; /* 64.4px */
+    color: #fff;
+    font-family: Poppins;
+    font-size: 56px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 115%; /* 64.4px */
 }
 
 .heading {
-  color: #fff;
-  font-family: Poppins;
-  font-size: 48px;
-  font-style: normal;
-  font-weight: 600;
-  line-height: 125%; /* 60px */
+    color: #fff;
+    font-family: Poppins;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 125%; /* 60px */
 }
 
 .subtitles {
-  color: #fff;
-  font-family: "Andale Mono";
-  font-size: 24px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 30px */
-  letter-spacing: -1.2px;
+    color: #fff;
+    font-family: "Andale Mono";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 30px */
+    letter-spacing: -1.2px;
 }
 
 .simple-text {
-  color: #fff;
-  font-family: "Andale Mono";
-  font-size: 20px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 25px */
-  letter-spacing: -1px;
+    color: #fff;
+    font-family: "Andale Mono";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 25px */
+    letter-spacing: -1px;
 }
 
 .btn-text {
-  color: #fff;
-  font-family: Poppins;
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  line-height: 125%; /* 20px */
-  letter-spacing: -0.8px;
+    color: #fff;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 125%; /* 20px */
+    letter-spacing: -0.8px;
 }

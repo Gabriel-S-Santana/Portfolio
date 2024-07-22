@@ -71,7 +71,8 @@
     .hero-section {
         padding: 0px 50px;
         padding-top: 100px;
-        background: url("../../../assets/images/home-section-responsive.png") black 50% / cover no-repeat;
+        background: url("../../../assets/images/home-section-responsive.png")
+            black 50% / cover no-repeat;
         background-position: center;
     }
 
@@ -98,7 +99,7 @@
     }
 }
 
-@media (max-width: 400px) {
+@media (max-width: 420px) {
     .hero-section {
         padding: 0px 24px;
     }
@@ -108,12 +109,17 @@
     }
 
     .hero-text h1 {
-        font-size: 3.2rem;
+        color: #fff;
+
+        font-family: Poppins;
+        font-size: 32px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 115%; /* 36.8px */
     }
 
     .hero-text p {
         width: 100%;
         font-size: 1.6rem;
     }
-
 }
