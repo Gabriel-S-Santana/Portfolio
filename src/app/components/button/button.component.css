@@ -29,3 +29,10 @@ button {
 .btn-default:hover {
     background: var(--cian);
 }
+
+@media(max-width: 450px) {
+    button {
+        width: 142px;
+        padding: 12px 18px;
+    }
+}

@@ -3,24 +3,17 @@
         <h1>Olá! Me chamo Gabriel,
             sou desenvolvedor <span>front-end</span>
         </h1>
-        <p>Dedicado, curioso, comunicativo, com foco em inovação e usabilidade, buscando integrar equipes dinâmicas para contribuir com projetos desafiadores e impactantes.</p>
-
-    <div class="hero-btn-container">
-        <gs-button
-            [isGradient]="false"
-            iconButton="mail"
-            textButton="Email"
-        />
-        <gs-button
-            [isGradient]="false"
-            iconButton="github"
-            [textButton]="'Github'"
-        />
-        <gs-button
-            [isGradient]="false"
-            [iconButton]="'linkedin'"
-            [textButton]="'Linkedin'"
-        />
+        <p>Dedicado, curioso, comunicativo, com foco em inovação e usabilidade, buscando integrar equipes dinâmicas para
+            contribuir com projetos desafiadores e impactantes.</p>
+        <div class="hero-btn-container">
+            <a href="">
+                <gs-button [isGradient]="false" iconButton="mail" textButton="Email" />
+            </a>
+            <gs-button [isGradient]="false" iconButton="github" [textButton]="'Github'" />
+            <gs-button [isGradient]="false" [iconButton]="'linkedin'" [textButton]="'Linkedin'" />
+            <a href="../../../assets/docs/Gabriel-Santana-dev-jr.pdf" download="Gabriel-Santana-dev-jr">
+                <gs-button [isGradient]="true" [iconButton]="'download-cloud'" textButton="Download" />
+            </a>
+        </div>
     </div>
-</div>
 </section>

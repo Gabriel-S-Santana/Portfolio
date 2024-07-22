@@ -32,7 +32,7 @@
 }
 
 .hero-text h1 span {
-    color: #00D2DF;
+    color: #00d2df;
 }
 
 .hero-text p {
@@ -48,5 +48,52 @@
 .hero-btn-container {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     gap: 40px;
+}
+
+.hide {
+    display: none;
+}
+
+@media (max-width: 770px) {
+    .hero-section {
+        padding: 0px 90px;
+        padding-top: 100px;
+    }
+
+    .hero-text {
+        width: 100%;
+    }
+}
+
+@media (max-width: 450px) {
+    .hero-section {
+        padding: 0px 50px;
+        padding-top: 100px;
+        background: url("../../../assets/images/home-section-responsive.png") black 50% / cover no-repeat;
+        background-position: center;
+    }
+
+    .hero-text {
+        gap: 2.4rem;
+    }
+
+    .hero-text h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-text p {
+        width: 100%;
+        font-size: 1.8rem;
+    }
+
+    .hero-btn-container {
+        width: 100%;
+        justify-content: space-between;
+    }
+
+    .hide {
+        display: flex;
+    }
 }
