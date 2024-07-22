@@ -99,7 +99,7 @@
     }
 }
 
-@media (max-width: 420px) {
+@media (max-width: 400px) {
     .hero-section {
         padding: 0px 24px;
     }
