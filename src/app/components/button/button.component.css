@@ -39,7 +39,7 @@ button {
 
 @media(max-width: 420px) {
     button {
-        width: 132px;
+        
         padding: 12px 12px;
     }
 }
